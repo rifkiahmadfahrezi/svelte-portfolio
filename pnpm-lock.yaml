@@ -14,6 +14,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      mode-watcher:
+        specifier: ^0.4.1
+        version: 0.4.1(svelte@4.2.19)
       tailwind-merge:
         specifier: ^2.5.3
         version: 2.5.3
@@ -66,6 +69,9 @@ importers:
       svelte-check:
         specifier: ^4.0.0
         version: 4.0.4(svelte@4.2.19)(typescript@5.6.2)
+      svelte-hero-icons:
+        specifier: ^5.2.0
+        version: 5.2.0(svelte@4.2.19)
       tailwindcss:
         specifier: ^3.4.9
         version: 3.4.13
@@ -414,6 +420,9 @@ packages:
     resolution: {integrity: sha512-fbMkAF7fufku0N2dE5TBXcNlg0pt0cJue4xBRE2Qc5Vqikxr4VCgKj/ht6SMdFcOacVA9rqF70APJ8RN/4vMJw==}
     cpu: [x64]
     os: [win32]
+
+  '@steeze-ui/heroicons@2.4.0':
+    resolution: {integrity: sha512-gxOytXYV/lQiGxkZQC+CP5IWCa+d/vscRKn4JfZXgF8MZEzg9wfl1tTi/GOr3Eg93YkhlhNDwTIGWjhMaEwmvw==}
 
   '@sveltejs/adapter-auto@3.2.5':
     resolution: {integrity: sha512-27LR+uKccZ62lgq4N/hvyU2G+hTP9fxWEAfnZcl70HnyfAjMSsGk1z/SjAPXNCD1mVJIE7IFu3TQ8cQ/UH3c0A==}
@@ -1030,6 +1039,11 @@ packages:
     resolution: {integrity: sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==}
     engines: {node: '>=16 || 14 >=14.17'}
 
+  mode-watcher@0.4.1:
+    resolution: {integrity: sha512-bNC+1NXmwEFZtziCdZSgP7HFQTpqJPcQn9GwwJQGSf6SBF3neEPYV1uRwkYuAQwbsvsXIYtzaqgedDzJ7D1mhg==}
+    peerDependencies:
+      svelte: ^4.0.0 || ^5.0.0-next.1
+
   mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
     engines: {node: '>=4'}
@@ -1386,6 +1400,12 @@ packages:
     peerDependenciesMeta:
       svelte:
         optional: true
+
+  svelte-hero-icons@5.2.0:
+    resolution: {integrity: sha512-KpdMTL0bOnkxciEmDXvyVF/R5nrZ1x1uHCSt9gMrrbEd3g5HSIaaDChOutTOfeI+cZ3EJbb+OcBH/lBzJr1aEw==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      svelte: ^3.0.0 || ^4.0.0 || ^5.0.0
 
   svelte-hmr@0.16.0:
     resolution: {integrity: sha512-Gyc7cOS3VJzLlfj7wKS0ZnzDVdv3Pn2IuVeJPk9m2skfhcu5bq3wtIZyQGggr7/Iim5rH5cncyQft/kRLupcnA==}
@@ -1789,6 +1809,8 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.24.0':
     optional: true
+
+  '@steeze-ui/heroicons@2.4.0': {}
 
   '@sveltejs/adapter-auto@3.2.5(@sveltejs/kit@2.6.2(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.8))(svelte@4.2.19)(vite@5.4.8))':
     dependencies:
@@ -2447,6 +2469,10 @@ snapshots:
 
   minipass@7.1.2: {}
 
+  mode-watcher@0.4.1(svelte@4.2.19):
+    dependencies:
+      svelte: 4.2.19
+
   mri@1.2.0: {}
 
   mrmime@2.0.0: {}
@@ -2727,6 +2753,11 @@ snapshots:
       postcss: 8.4.47
       postcss-scss: 4.0.9(postcss@8.4.47)
     optionalDependencies:
+      svelte: 4.2.19
+
+  svelte-hero-icons@5.2.0(svelte@4.2.19):
+    dependencies:
+      '@steeze-ui/heroicons': 2.4.0
       svelte: 4.2.19
 
   svelte-hmr@0.16.0(svelte@4.2.19):
