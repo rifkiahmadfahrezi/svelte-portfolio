@@ -1,7 +1,7 @@
 import type { SiteConfig, PersonalInfo } from './types/site';
 
 export const site: SiteConfig = {
-	name: 'Rifki',
+	name: 'Alex',
 	description: 'Fullstack website developer',
 	navbarMenus: [
 		{
