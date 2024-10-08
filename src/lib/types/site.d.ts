@@ -27,8 +27,8 @@ export type Experience = {
 	description?: string;
 };
 export type Education = {
-	company: string;
-	position: string;
+	school: string;
+	major: string;
 	from: string;
 	until: string;
 	description?: string;
@@ -39,12 +39,4 @@ export type Projects = {
 	techStack?: string[];
 	role?: string[];
 	link: string;
-};
-
-export type Blog = {
-	title: string;
-	publishedAt: Date | string;
-	description?: string;
-	content: string;
-	tags?: string[];
 };
