@@ -76,3 +76,8 @@
 		@apply bg-background text-foreground;
 	}
 }
+
+
+pre.shiki{
+	@apply p-3 rounded-sm my-2;
+}
