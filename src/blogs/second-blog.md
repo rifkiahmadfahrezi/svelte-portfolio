@@ -3,7 +3,7 @@ title: Second
 description: Second post.
 date: '2023-4-16'
 categories:
-  - website
+  - hello
 published: true
 ---
 
@@ -11,4 +11,4 @@ published: true
 
 Media inside the **static** folder is served from `/`.
 
-![Svelte](favicon.png)
+![Svelte](/favicon.png)
