@@ -1,4 +1,4 @@
-export type Categories = 'website' | 'frontend' | 'backend' | 'database' | 'devops' | 'tips' | 'learn' | 'oot'
+export type Category = 'website' | 'frontend' | 'backend' | 'database' | 'devops' | 'tips' | 'learn' | 'oot'
 
 export type Blog = {
 	title: string;
@@ -8,5 +8,5 @@ export type Blog = {
 	content: string;
 	slug: string;
 	tags?: string[];
-	category: Categories[];
+	categories: Category[];
 };

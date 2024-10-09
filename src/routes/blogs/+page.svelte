@@ -1,5 +1,6 @@
 <script lang='ts' >
 import { formatDate } from "$lib/utils";
+import { Badge } from "$lib/components/ui/badge";
 import { site } from "$lib/site.config.js";
 
 export let data
@@ -19,6 +20,14 @@ export let data
 					<h1 class="text-lg md:text-xl font-semibold capitalize group-hover:underline line-clamp-2`" >{blog.title}</h1>
 					<p class="text-muted-foreground">{formatDate(blog.date)}</p>
 					<p class="description">{blog.description}</p>
+
+					{#if blog.categories}
+						<div class="flex gap-1 flex-wrap">
+							{#each blog.categories as ctg}
+								<Badge>{ctg}</Badge>
+							{/each}
+						</div>
+					{/if}
 				</a>
 			</li>
 		{/each}
